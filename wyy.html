@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问答网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>问答网页</h1>
+    <form id="quizForm">
+        <div class="question">
+            <label for="q1">1. 你最喜欢的颜色是什么？</label>
+            <input type="text" id="q1" name="q1">
+        </div>
+        <div class="question">
+            <label for="q2">2. 你最喜欢的动物是什么？</label>
+            <input type="text" id="q2" name="q2">
+        </div>
+        <div class="question">
+            <label for="q3">3. 你最喜欢的食物是什么？</label>
+            <input type="text" id="q3" name="q3">
+        </div>
+        <button type="button" onclick="submitQuiz()">提交</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function submitQuiz() {
+            var q1 = document.getElementById("q1").value;
+            var q2 = document.getElementById("q2").value;
+            var q3 = document.getElementById("q3").value;
+
+            var result = "王昀是大笨蛋！" + "王昀是大笨蛋！" + "王昀是大笨蛋！" ;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
+tml>
+
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
